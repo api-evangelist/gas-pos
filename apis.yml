@@ -1,7 +1,28 @@
 aid: gas-pos
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gas-pos.png
 name: Gas POS
-description: Gas POS is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Gas Pos is a North Little Rock, Arkansas technology company (founded 2015) that
+  builds cloud-based point-of-sale systems and EMV-certified fuel dispensers for gas
+  stations and truck stops across the United States. Delivered as equipment-as-a-service
+  with no upfront hardware cost, the platform pairs touchscreen POS terminals, barcode
+  scanners, and back-office inventory and pricing tools with PCI-compliant, EMV-certified
+  payment processing at both the register and the pump. It accepts major fleet cards
+  including Comdata, Comchek, EFS, T-Chek, Voyager, and Fleetone, and lets operators
+  manage item pricing and inventory remotely from a phone. Backed by 500 Global and
+  Pioneer Fund. Added to the API Evangelist network as a company profile; no public
+  developer API surface has been located to date.
 url: https://raw.githubusercontent.com/api-evangelist/gas-pos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Point of Sale
+- Payments
+- Fuel
+- Convenience Store
+- Truck Stop
+- Retail
+- EMV
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gas-pos-domain-security.yml
 - type: Website
   url: https://gaspos.co
+- type: Pricing
+  url: https://www.gaspos.co/gas-pos-pricing
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
